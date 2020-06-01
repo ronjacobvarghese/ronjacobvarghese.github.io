@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Subjects</title>
+</head>
+<body>
+    <div class="head">
+        <h1>My Website</h1>
+    </div>
+    <div class="container">
+        <div class="topnav">
+            <div class="leftside">
+               
+                 <div class="navlinks">
+                    <a href="co-ron-assignment.html">Home</a>
+                </div>
+
+                <div class="navlinks">
+                    <a href="about me.html">About</a>
+                </div>
+
+                <div class="navlinks">
+                    <a href="https://www.amrita.edu/">Education</a>
+                </div>
+                <div class="navlinks active">
+                    <a class="activelink" href="portfolio.html">Subjects</a>
+                </div>
+
+           
+            </div>
+            
+            <div class="rightside">
+            
+                <div class="navlinks">
+                    <a href="#">Summary</a>
+                </div>
+           
+            </div>
+
+        </div>
+        <div class="postfolio">
+
+            <div class="items">
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/cprogramming.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>COMPUTER PROGRAMMING</h2>
+                        <p>Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result. </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/user-interface-design.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>USER-INTERFACE DESIGN</h2>
+                        <p>
+                            User interface design (UI) or user interface engineering is the design of user interfaces for machines and software devices, with the focus on maximizing usability and the user experience. 
+                        </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/maths.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>MATHEMATICS</h2>
+                        <p>
+                            the abstract science of number, quantity, and space, either as abstract concepts or as applied to other disciplines such as physics and engineering
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/eee.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>ELECTRICALS AND ELECTRONICS ENGINEERING</h2>
+                        <P>Electrical engineering is an engineering discipline concerned with the study, design and application of equipment, devices and systems which use electricity, electronics, and electromagnetism.</P>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/physics.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>PHYSICS</h2>
+                        <p>
+                            the branch of science concerned with the nature and properties of matter and energy. The subject matter of physics includes mechanics, heat, light and other radiation, sound, electricity, magnetism, and the structure of atoms.
+                        </p>
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card-img" style="background-image: url(pictures/cultura.jpg);"></div>
+                    <div class="imgshade1">
+                        <h2>CULTURAL</h2>
+                        <p>
+                            Indian culture has been heavily influenced by Dharmic religions. They have been credited with shaping much of Indian philosophy, literature, architecture, art and music. ... India is the birthplace of Hinduism, Buddhism and other religions.
+                        </p>
+                    </div>
+                
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<script>
+    const subjects=document.querySelectorAll('.card');
+    subjects.forEach(subject =>{
+        subject.addEventListener("mouseover",i => {
+            subject.childNodes[1].classList.add('shadow');
+        })
+        subject.addEventListener("mouseout",i => {
+            subject.childNodes[1].classList.remove('shadow');
+        })
+
+    })
+</script>
+</html>
