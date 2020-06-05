@@ -12,10 +12,11 @@
 .head{
     padding: 30px;
     text-align: center;
-    background: rgb(228, 225, 225);
+    background:#a4123f;
 }
 .head h1{
     font-size: 50px;
+    color:white;
 }
 .container{
     display:grid;
@@ -28,7 +29,7 @@
 
 /* Navigation Styles*/
 .topnav{
-    background-color: rgb(33, 160, 182);
+    background-color:#79092b;
     text-decoration: none;
     display: flex;
     justify-content: space-between;   

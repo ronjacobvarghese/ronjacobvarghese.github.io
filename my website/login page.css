@@ -1,0 +1,86 @@
+/*login style*/
+.login{
+    background-color:#a4123f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 725px;
+    margin:0;
+  }
+  .log-container{
+    background-color: white;
+    border-radius:5px;
+    width:400px;
+    max-width:100%;
+    overflow: hidden;
+  }
+  .log-header{
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+  }
+  .log-header h2{
+    margin:0;
+  }
+  .form{
+    padding: 30px 40px;
+  }
+  .log-wrapper{
+   
+    padding-bottom:20px;
+    position:relative;
+  }
+  .log-wrapper label{
+    display:inline-block;
+    margin-bottom:5px;
+  }
+  .log-wrapper input{
+    border:2px solid #dddbdb;
+    border-radius: 4px;
+    display:block;
+    padding:10px;
+    width:90%;
+  }
+  form .success input{
+    border-color:#2ecc71;
+
+  }
+  form .fail input{
+    border-color:#e74c3c;
+  }
+  .log-wrapper i{
+    position:absolute;
+    bottom:50px;
+    left:290px;
+    visibility: hidden;
+  }
+  .form .success .check {
+    visibility: visible;
+    color:#2ecc71;
+  }
+  .form .fail .exclamation{
+    visibility:visible;
+    color:#e74c3c;
+  }
+  .form .fail .exclamation{
+      visibility: visible;
+      color:#e74c3c;
+  }
+  .form button{
+    width:100%;
+    padding:15px;
+    background-color:#a4123f;
+    color:white;
+    border:1px #a4123f;
+    border-radius:2px;
+    font-size: 15px;
+  }
+  .log-wrapper small{
+    visibility: hidden;
+    margin:0;
+    padding:0;
+  }
+  .form .fail small{
+      visibility: visible;
+      color:#e74c3c;
+  }
+

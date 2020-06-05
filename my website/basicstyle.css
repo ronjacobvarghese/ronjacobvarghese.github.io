@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     text-decoration:none;
-
   }
   
   body {
@@ -15,23 +14,30 @@
   .header {
     padding: 30px;
     text-align: center;
-    background: rgb(228, 225, 225);
+    background:#a4123f;
   }
   
   .header h1 {
     font-size: 50px;
+    color:white;
   }
   h2{
     display:block;
   }
 
 
+
+
+
+
+
+
   /* Navigation Styles*/
 .topnav{
-  background-color: rgb(33, 160, 182);
+  background-color:#79092b;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;   
+  justify-content: space-between;  
 }
 .leftside{
   display:flex;
@@ -62,98 +68,110 @@
 
 
   
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-  }
+/*Home style*/
+.home-container{
+  width: 100%;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card{
+  position: relative;
+  background-color: rgb(228, 225, 225);
+  height:500px;
+  margin:20px;
+}
+.card  h2{
+  padding:30px 20px 20px 30px;
+}
+.card p{
+  padding:10px;
+  padding-left: 20px;
+}
+.card1{
+  margin-top: 10px;
+  background-color: rgb(228, 225, 225);
+  height: 200px;
+}
+.card1 h2{
+  display:inline-block;
+  padding:20px 20px 20px 30px;
+  color:purple;
+}
+.card3{
+  margin-top: 10px;
+}
+.card3 h2{
+  padding:10px;
+  padding-left:20px;
+}
+.card1 i{
+  color:purple;
+  display:block;
+  width:100%;
+  padding:10px;
+  padding-left:20px;
+  font-size: 20px;
+}
+.card .img{
+  padding:10px;
+  padding-left:30px
+}
+.card:hover{
+  background-color: rgba(228, 225, 225, 0.671);
+}
+.log:hover{
+  background-color: rgba(228, 225, 225, 0.671);
+
+}
+.footer{
+  padding:40px;
+  text-align:center;
+  background-color: #a4123f;
+  color:white;
+  width:100%;
+
+}
+
+
+
+
+
+
+
+
+
   
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color:rgb(228, 225, 225);
-    padding: 20px;
-    margin-top: 20px;
-    color:purple;
-  }
-  .card:hover {
-    background-color:whitesmoke;
-  }
-  .card1 {
-    float:left;
-    width:100%;
-    background-color:rgb(228, 225, 225);
-    padding: 20px;
+  /*about me styles*/
+  .about-container{
+    width:98%;
     margin: 20px;
-    font-size:20px;
   }
-  .card2 {
-    width:100%;
+  .profile-wrapper{
+    position:relative;
+    margin-right:20px;
+    padding:20px;
+    background-color:rgb(228, 225, 225) ;
     height:300px;
-    background-color:rgb(228, 225, 225);
-    padding: 20px;
-    margin-top: 20px;
   }
-  .profile{
-    position:relative;
-    top:250px;
-    right: 300px;
-    height:260px;
-  }
-  .card2 div{
-    position:relative;
-    bottom:250px;
+  .profile-text{
+    position:absolute;
+    bottom:10px;
     left:300px;
-     }
-  .card2 div p{
-    font-size:22px;
+    padding:20px;
+    font-size:20px
   }
-  .card2 div .p1{
-    font-size:32px;
-    color:rgb(177, 63, 63)
+  .p-head{
+    font-size:30px;
+    color:rgb(173, 30, 30) !important;
+  }
+  .about-wrapper{
+    background-color: rgb(228, 225, 225);
+    padding:20px;
+    line-height:30px;
+    margin:20px 20px 20px 0;
+    font-size:20px
   }
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background:rgb(33, 160, 182);
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn,.card1 {   
-      width: 100%;
-      padding:20px;
-    }
-  
-}
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
-  }
+
+
